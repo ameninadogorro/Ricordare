@@ -9,7 +9,7 @@
 <p>Grazie mille nonna✨</p>
     </td>
     <td>
-    <img src="street.png">
+    <img src="vovo.png">
     </td>
   </tr>
 </table>
