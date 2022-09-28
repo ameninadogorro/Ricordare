@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+func coletaNomeRemedio () -> String? {
+    let nomeRemedio = readLine()
+    return nomeRemedio
+}
