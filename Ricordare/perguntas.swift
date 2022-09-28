@@ -7,11 +7,5 @@
 
 import Foundation
 
-func start() {
-    print("Qual remedio você está procurando?")
-    var texto = readLine() //recebeu uma string
-    var numero = Double(texto!)
-    print(texto)
-    print(numero ?? 6)
-}
+
 
