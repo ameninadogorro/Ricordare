@@ -6,24 +6,47 @@
 //
 import Foundation
 
+// Definindo a estrutura para o Medicamento
+struct Medicamento {
+    var nome: String
+    var dataValidade: Date
+}
 
-print("""
-    Olá, como você está se sentindo hoje? ☺️
-    De qual medicamento você precisa de informações?
-    """)
+// Criando a função para adicionar um novo medicamento
+func adicionarMedicamento() -> Medicamento {
+    print("Informe o nome do medicamento:")
+    let nome = readLine() ?? ""
+    
+    print("Informe a data de validade no formato dd/MM/yyyy:")
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "dd/MM/yyyy"
+    let dataValidadeString = readLine() ?? ""
+    let dataValidade = dateFormatter.date(from: dataValidadeString) ?? Date()
+    
+    return Medicamento(nome: nome, dataValidade: dataValidade)
+}
 
-print("""
+// Criando a função para calcular o número de dias entre duas datas
+func diasEntreDatas(data1: Date, data2: Date) -> Int {
+    let calendar = Calendar.current
+    let components = calendar.dateComponents([.day], from: data1, to: data2)
+    return components.day ?? 0
+}
 
-1 - Dipirona
-2 - agua
-3 - h20
+// Criando a lista vazia de medicamentos
+var medicamentos: [Medicamento] = []
 
-""")
+// Adicionando medicamentos à lista
+medicamentos.append(adicionarMedicamento())
+medicamentos.append(adicionarMedicamento())
 
-let remedios = [0,1,2,3]
+// Definindo a data atual
+let dataAtual = Date()
 
-let dicionario = [0: "Dipirona", 1: "agua", 2: "h2o"]
-   
-let listaRemedios = ["Dipirona", "agua", "h20"]
-
-
+// Verificando se há medicamentos perto de vencer
+for medicamento in medicamentos {
+    let diasRestantes = diasEntreDatas(data1: dataAtual, data2: medicamento.dataValidade)
+    if diasRestantes < 7 {
+        print("O medicamento \(medicamento.nome) está perto de vencer. Restam \(diasRestantes) dias.")
+    }
+}

@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4C471A4927E0D07E00F49B7F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C471A4827E0D07E00F49B7F /* main.swift */; };
-		4C471A5027E35ED100F49B7F /* verificacoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C471A4F27E35ED100F49B7F /* verificacoes.swift */; };
-		4CADBB8627EB4EE700C09690 /* remedios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CADBB8527EB4EE700C09690 /* remedios.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,8 +25,6 @@
 /* Begin PBXFileReference section */
 		4C471A4527E0D07E00F49B7F /* Ricordare */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Ricordare; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C471A4827E0D07E00F49B7F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		4C471A4F27E35ED100F49B7F /* verificacoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verificacoes.swift; sourceTree = "<group>"; };
-		4CADBB8527EB4EE700C09690 /* remedios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = remedios.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +58,6 @@
 			isa = PBXGroup;
 			children = (
 				4C471A4827E0D07E00F49B7F /* main.swift */,
-				4C471A4F27E35ED100F49B7F /* verificacoes.swift */,
-				4CADBB8527EB4EE700C09690 /* remedios.swift */,
 			);
 			path = Ricordare;
 			sourceTree = "<group>";
@@ -127,8 +121,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C471A4927E0D07E00F49B7F /* main.swift in Sources */,
-				4CADBB8627EB4EE700C09690 /* remedios.swift in Sources */,
-				4C471A5027E35ED100F49B7F /* verificacoes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
